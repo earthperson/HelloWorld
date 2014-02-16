@@ -4,7 +4,7 @@ using namespace std;
 
 int main(int argc, char* argv[]) {
 	// 1
-	std::cout << "Hello world at 15 November 2011" << endl;
+	std::cout << "Hello, World (15 November 2011)" << endl;
 
 	// 2
 	cout << "Hello, World" << endl;
