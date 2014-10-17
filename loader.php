@@ -13,9 +13,9 @@ ob_implicit_flush(true);
 class Loader {
 	
 	public $cursor = array(
-		0 	=> "—\r",
-		45 	=> "/\r",
-		90 	=> "|\r",
+		0   => "—\r",
+		45  => "/\r",
+		90  => "|\r",
 		135 => "\\\r",
 		180 => "—\r",
 		225 => "/\r",
