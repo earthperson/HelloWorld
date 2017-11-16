@@ -1,0 +1,525 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>   
+<title>Программа Bank v 1.0</title>   
+<meta http-equiv="content-type" content="text/html; charset=windows-1251" />  
+<style type="text/css">
+<!--   
+.menu { background: lightblue; padding: 20px; margin: 20px; border-style:solid; border-width:1px; border-color:#000080; position: absolute;  
+text-align: left; width: 700px; top: 50px;    
+z-index: 10; }      
+.menu2 { background: lightblue; padding: 20px; margin: 20px; border-style:solid; border-width:1px; border-color:#000080; position: absolute;  
+text-align: left; width: 700px; top: 50px;    
+z-index: 5; }
+.menu3 { background: lightblue; padding: 20px; margin: 20px; border-style:solid; border-width:1px; border-color:#000080; position: absolute;  
+text-align: left; width: 700px; top: 50px;    
+z-index: 15; }
+-->
+</style>
+<script type="text/javascript">
+<!-- 
+var const1 = "пусто"; 
+var const2 = "пусто";
+var const3 = "пусто";
+var const4 = "пусто";
+var const5 = "пусто";
+var const6 = "пусто";
+var const7 = "пусто";
+var const8 = "пусто";
+var const11 = 0;
+var const22 = 0;
+var const33 = 0;
+var const44 = 0;
+var const55 = 0;
+var const66 = 0;
+var const77 = 0;
+var const88 = 0;
+
+function killContextMenu() 
+{ 
+return false;
+}     
+ 
+function errorMsg() 
+{
+var myPopup = window.createPopup();
+var popupBody = myPopup.document.body; 
+var winWidth = document.documentElement.clientWidth; 
+var winHeight = document.documentElement.clientHeight;
+var msgWidth=400, msgHeight=65;           
+popupBody.style.backgroundColor = "lightblue";    
+popupBody.style.color = "red";  
+popupBody.style.padding = "20";         
+popupBody.innerHTML = "<b>Ошибка: Поле допускает ввод только чисел.</b>";
+myPopup.show((winWidth-msgWidth)/2,(winHeight-msgHeight)/2,msgWidth,msgHeight,document.documentElement); 
+}
+
+function focusFirst()      
+{ 
+document.form1.a.focus();
+} 
+
+function isNumberInput(field,event)
+{
+var key, keyChar;
+
+if (window.event)  
+key = window.event.keyCode; 
+else   
+return true;  
+
+// Проверка на специальные символы, например стрелок и запятых
+if (key == null || key == 0 ||key == 8 || key == 13 || key == 27 || key == 44 || key == 46)
+return true;
+ 
+keyChar = String.fromCharCode(key);
+
+if (/\d/.test(keyChar))
+return true;
+else  
+{ 
+errorMsg();
+return false;
+}
+} 
+
+function previousAccountFunc(arg1,arg2,arg3,arg4,arg5,arg6,arg7,arg8) 
+{ 
+const11 = arg1;
+const22 = arg2;
+const33 = arg3;
+const44 = arg4;
+const55 = arg5; 
+const66 = arg6;
+const77 = arg7;
+const88 = arg8;
+document.all['a11'].innerHTML = const1;
+document.all['a12'].innerHTML = const2; 
+document.all['a15'].innerHTML = const3; 
+document.all['a111'].innerHTML = const4;
+document.all['a114'].innerHTML = const5;
+document.all['a117'].innerHTML = const6;
+document.all['a119'].innerHTML = const7;
+document.all['a112'].innerHTML = const8; 
+const1 = const11;
+const2 = const22;
+const3 = const33;
+const4 = const44; 
+const5 = const55;
+const6 = const66;
+const7 = const77;
+const8 = const88;
+}
+
+function str_empty(str) {
+	var pattern = /\S/;
+	if(pattern.test(str)) {return false;}
+	else {return true;}
+}
+
+function calc()  
+{   
+with (document.form1)
+{
+var pole1 =	a.value;
+var pole2 =	b.value;
+var pole3 =	c1.value;
+var pole4 =	c2.value;
+var pole5 =	q.value;
+if(str_empty(pole1)) {
+    pole1 = '0';
+}
+if(str_empty(pole2)) {
+    pole2 = '0';
+}
+if(str_empty(pole3)) {
+    pole3 = '0';
+}
+if(str_empty(pole4)) {
+    pole4 = '0';
+}
+if(str_empty(pole5)) {
+    pole5 = '0';
+}
+pole1 = pole1.replace(/,/g,".");	
+pole2 = pole2.replace(/,/g,".");
+pole3 = pole3.replace(/,/g,".");
+pole4 = pole4.replace(/,/g,".");
+pole5 = pole5.replace(/,/g,".");
+var x = (parseFloat(pole1))/1200;  
+var ch = 1, sum = 0; 
+for (var i=0; i < parseFloat(pole2); i++)    
+{ 	
+ch *= (1/(1+x)); 
+sum += ch;        
+}   	
+var sumCredit = parseFloat(pole3) - parseFloat(pole4);
+var ro = sumCredit * (parseFloat(pole5)/100);
+var payMonth = Math.round((sumCredit/sum) + ro);
+payMonth = payMonth/10;
+payMonth = Math.round(payMonth);   
+payMonth = payMonth*10;
+var pereplata = (payMonth * parseFloat(pole2)) - sumCredit;
+}
+if (isNaN(payMonth)||isNaN(pereplata)||!isFinite(payMonth)||!isFinite(pereplata))
+{
+document.all['d1'].innerHTML = "";  	 
+document.all['d'].innerHTML = "";  	
+document.all['e23'].innerHTML = "";   
+}     
+else 	    
+{   
+document.all['d1'].innerHTML = "<b style='color:#000080;'>"+sumCredit+"</b>"; 
+document.all['d'].innerHTML = "<b style='color:#000080;'>"+payMonth+"</b>";
+document.all['e23'].innerHTML = "<b style='color:#000080;'>"+pereplata+"</b>";
+previousAccountFunc(sumCredit,payMonth,pereplata,pole1,pole2,pole3,pole4,pole5);
+}     
+focusFirst(); 
+} 
+
+function resetAll()  
+{  
+document.form1.reset(); 
+document.all['d1'].innerHTML = ""; 	
+document.all['d'].innerHTML = ""; 	
+document.all['e23'].innerHTML = ""; 
+focusFirst(); 
+}    
+//-->    
+</script>       
+</head>     
+<body bgcolor="#d4d0c8" text="#000000" link="#0000ff" alink="#ff0000" vlink="#800080" 
+marginheight="20" topmargin="20" marginwidth="20" leftmargin="20">  
+<hr />          
+<form action="#" method="get" name="form1" id="form1">     
+<table height="50%" width="100%" border="0" bordercolor="#000000" cellspacing="3" cellpadding="3" align="center"> 
+<tr> 
+<td align="right" valign="middle" width="50%">        
+<label onclick = "document.form1.a.focus();"><b>Размер процентной ставки по кредиту, годовых:&nbsp;&nbsp;&nbsp;</b></label> 	
+</td>        
+<td>   
+<table height="100%" width="100%" border="0" bordercolor="#000000" cellspacing="0" cellpadding="0" align="center">
+<tr>
+<td align="left" valign="middle" width="50%"> 
+<input type="text" name="a" id="a" maxlength="5" size="10" style="background-color:white;" onkeypress="return isNumberInput(this,event);" />
+<label onclick = "document.form1.a.focus();">&nbsp;%</label>
+</td>
+</tr>
+</table> 
+</td>
+</tr>  
+<tr>
+<td align="right" valign="middle">     
+<label onclick = "document.form1.q.focus();"><b>Комиссия за расчетное обслуживание,&nbsp;&nbsp;&nbsp;<br /> ежемесячно в течение срока кредита:&nbsp;&nbsp;&nbsp;</b></label> 
+</td> 
+<td> 
+<table height="100%" width="100%" border="0" bordercolor="#000000" cellspacing="0" cellpadding="0" align="center">
+<tr>
+<td align="left" valign="middle" width="50%"> 
+<input type="text" name="q" id="q" maxlength="5" size="10" style="background-color:white;" onkeypress="return isNumberInput(this,event);" />
+<label onclick = "document.form1.q.focus();">&nbsp;%</label> 
+</td> 
+</tr>
+</table>  
+</td>
+</tr>         
+<tr>
+<td align="right" valign="middle">
+<label onclick = "document.form1.b.focus();"><b>Срок кредита:&nbsp;&nbsp;&nbsp;</b></label>
+</td>
+<td> 
+<table height="100%" width="100%" border="0" bordercolor="#000000" cellspacing="0" cellpadding="0" align="center">
+<tr>
+<td align="left" valign="middle" width="50%"> 
+<input type="text" name="b" id="b" maxlength="2" size="10" style="background-color:white;" onkeypress="return isNumberInput(this,event);" />
+<label onclick = "document.form1.b.focus();">&nbsp;мес.</label> 
+</td> 
+</tr>
+</table> 
+</td> 
+</tr>
+<tr> 
+<td align="right" valign="middle">
+<label onclick = "document.form1.c1.focus();"><b>Стоимость товара:&nbsp;&nbsp;&nbsp;</b></label>
+</td>  
+<td>   		   			  			 
+<input type="text" name="c1" id="c1" maxlength="10" size="10" style="background-color:white;" onkeypress="return isNumberInput(this,event);" />
+</td>
+</tr>  
+<tr> 
+<td align="right" valign="middle">
+<label onclick = "document.form1.c2.focus();"><b>Первоначальный взнос:&nbsp;&nbsp;&nbsp;</b></label>
+</td> 
+<td>
+<table height="100%" width="100%" border="0" bordercolor="#000000" cellspacing="0" cellpadding="0" align="center">
+<tr>
+<td align="left" valign="middle" width="50%"> 
+<input type="text" name="c2" id="c2" maxlength="10" size="10" style="background-color:white;" onkeypress="return isNumberInput(this,event);" />
+</td> 
+</tr>
+</table>    		   			 			 
+</td>
+</tr> 
+<tr>
+<td align="right" valign="middle">
+<label onclick = "document.form1.a.focus();"><b>Сумма кредита:&nbsp;&nbsp;&nbsp;</b></label>
+</td> 
+<td id="d1" align="left" valign="middle">    
+&nbsp; 
+</td> 
+</tr> 
+<tr>
+<td align="right" valign="middle">
+<label onclick = "document.form1.a.focus();"><b>Ежемесячный платеж:&nbsp;&nbsp;&nbsp;</b></label>
+</td> 
+<td id="d" align="left" valign="middle">   
+&nbsp; 
+</td>  
+</tr>  
+<tr> 
+<td align="right" valign="middle">
+<label onclick = "document.form1.a.focus();"><b>Удорожание товара:&nbsp;&nbsp;&nbsp;</b></label>
+</td>
+<td id="e23" align="left" valign="middle">  
+&nbsp;   
+</td>   
+</tr>
+<tr> 
+<td colspan="2" height="25">
+<hr />
+</td>
+</tr> 
+<tr>  
+<td align="right" valign="middle"> 
+<table height="100%" width="100%" border="0" bordercolor="#000000" cellspacing="0" cellpadding="0" align="center">
+<tr> 
+<td align="center" valign="middle" width="70">  
+<input type="button" name="ll32" id="ll32" value="!" title="о программе" style="font-weight:bold; color:red; width:25px; height:25px;" onmouseover="this.style.color = 'white';" onmouseout="this.style.color = 'red';" onclick="startScrollAll3();" />
+</td>
+<td align="center" valign="middle" width="70">  
+<input type="button" name="ll4" id="ll4" value="!" title="вызов справки" style="font-weight:bold; color:green; width:25px; height:25px;" onmouseover="this.style.color = 'white';" onmouseout="this.style.color = 'green';" onclick="startScrollAll2();" />
+</td>
+<td align="center" valign="middle" width="70">  
+<input type="button" name="ll3" id="ll3" title="предыдущий расчет" value="<" style="font-weight:bold; color:#000080; width:25px; height:25px;" onmouseover="this.style.color = 'white';" onmouseout="this.style.color = 'black';" onclick="startScrollAll();" />
+</td>
+<td align="center" valign="middle" width="70">  
+<input type="button" name="ll2" id="ll2" title="очистить поля" value="c" style="font-weight:bold; color:#000080; width:25px; height:25px;" onmouseover="this.style.color = 'white';" onmouseout="this.style.color = 'black';" onclick="resetAll();" />
+</td>
+<td align="center" valign="middle" width="70">  
+<input type="button" name="ll1" id="ll1" title="рассчитать" value="=" style="font-weight:bold; color:#000080; width:25px; height:25px;" onmouseover="this.style.color = 'white';" onmouseout="this.style.color = 'black';" onclick="calc();" />
+</td>
+<td>&nbsp;</td> 
+</tr>
+</table>
+</td>
+<td align="left" valign="middle">  
+<table height="100%" width="100%" border="0" bordercolor="#000000" cellspacing="0" cellpadding="0" align="center">
+<tr> 
+<td align="center" valign="middle">&nbsp;</td>
+</tr> 
+</table> 
+</td>   
+</tr> 	    
+</table>	  
+</form>            
+<hr /> 
+<div class="menu2" id="slider2" align="justify" style="font-weight:bold;">
+<table height="10" width="100%" border="0" bordercolor="#000080" cellspacing="0" cellpadding="0" align="center">
+ <tr>    
+   <td> 
+   <table  height="20" width="20" border="1" bordercolor="#000080" cellspacing="0" cellpadding="0" align="right">
+ <tr>
+   <td align="center" valign="middle"><label onmouseover="document.getElementById('qaw').style.color = 'white';" onmouseout="document.getElementById('qaw').style.color = '#000080';" onclick="startScrollAll2();"><span id="qaw" style="color:#000080;" title="закрыть окно">X</span></label></td> 
+ </tr>
+</table>
+</td>
+ </tr> 
+</table>
+Программа предназначена для расчета <i>удорожания товара</i> и <i>ежемесячного платежа</i> при условиях: 
+<ol>       
+<li>фиксированной процентной ставки по кредиту</li>
+<li>проценты начисляются ежемесячно на оставшуюся часть кредита (таким образом, в составе ежемесячного платежа уменьшается процентная часть и соответственно увеличивается часть идущая в погашение основного долга)</li>
+<li>комиссия за обслуживание начисляется ежемесячно от первоначальной суммы кредита (т.е. является постоянной величиной)</li>
+<li>погашение кредита осуществляется фиксированными, т.е. одинаковыми по размеру выплатами.</li>
+<li>ежемесячный платеж включает в себя проценты за пользование кредитом, комиссию за расчетное обслуживание, часть основного долга по кредиту.</li> 
+</ol>     
+</div>  
+<div class="menu3" id="slider3" align="justify" style="font-weight:bold;">
+<table height="10" width="100%" border="0" bordercolor="#000080" cellspacing="0" cellpadding="0" align="center">
+ <tr>    
+   <td> 
+   <table  height="20" width="20" border="1" bordercolor="#000080" cellspacing="0" cellpadding="0" align="right">
+ <tr>
+   <td align="center" valign="middle"><label onmouseover="document.getElementById('qaw3').style.color = 'white';" onmouseout="document.getElementById('qaw3').style.color = '#000080';" onclick="startScrollAll3();"><span id="qaw3" style="color:#000080;" title="закрыть окно">X</span></label></td> 
+ </tr>
+</table>
+</td>
+ </tr> 
+</table>
+<b>Программа Bank. Разработчик: Пономарев Дмитрий.<br />
+<br />Формулы для расчета, используемые в программе:</b><br />   
+&rho; = n &times; r / ( срок кредита в годах ),<br />  
+где r такая, что       
+<br />&sum; = ЕП &times; ( 1 / (1 + r) + 1 / (1 + r)&sup2; + . . . + 1 / (1 + r)<sup><small>n</small></sup> ),
+<br />где<br /> 
+&rho; - расчетная процентная ставка, в % годовых,<br />
+ЕП - ежемесячный платеж,<br />
+n - количество расчетных периодов (срок кредита),<br />
+&sum; - сумма кредита.<br />
+</div>  
+<div class="menu" id="slider" style="font-weight:bold;"> 
+<table height="30" width="100%" border="0" bordercolor="#000080" cellspacing="0" cellpadding="0" align="center">
+ <tr>    
+   <td align="center"><b>Предыдущий расчет:</b></td><td>   
+   <table  height="20" width="20" border="1" bordercolor="#000080" cellspacing="0" cellpadding="0" align="right">
+ <tr>
+   <td align="center" valign="middle"><label onmouseover="document.getElementById('qaw2').style.color = 'white';" onmouseout="document.getElementById('qaw2').style.color = '#000080';" onclick="startScrollAll();"><span id="qaw2" style="color:#000080;" title="закрыть окно">X</span></label></td> 
+ </tr>
+</table> 
+</td>
+ </tr> 
+</table> 
+<table height="100%" width="100%" border="0" bordercolor="#000000" cellspacing="3" cellpadding="3" align="center">
+<tr>  
+<td align="right" valign="middle" width="70%">      
+<b>Размер процентной ставки по кредиту, годовых:</b>  
+</td><td align="left" valign="middle"> 
+<b id="a111" style="color:#000080;">пусто</b> 
+</td></tr>
+<tr> 
+<td align="right" valign="middle">  
+<b>Комиссия за расчетное обслуживание, ежемесячно:</b>
+</td><td align="left" valign="middle">
+<b id="a112" style="color:#000080;">пусто</b>
+</td></tr>
+<tr> 
+<td align="right" valign="middle">
+<b>Срок кредита:</b>
+</td><td align="left" valign="middle">
+<b id="a114" style="color:#000080;">пусто</b>
+</td></tr>
+<tr> 
+<td align="right" valign="middle"> 
+<b>Стоимость товара:</b>
+</td><td align="left" valign="middle">
+<b id="a117" style="color:#000080;">пусто</b>
+</td></tr> 
+<tr> 
+<td align="right" valign="middle"> 
+<b>Первоначальный взнос:</b>
+</td><td align="left" valign="middle">
+<b id="a119" style="color:#000080;">пусто</b>
+</td></tr>
+<tr>  
+<td align="right" valign="middle">   
+<b>Сумма кредита:</b>
+</td><td align="left" valign="middle">
+<b id="a11" style="color:#000080;">пусто</b>
+</td></tr> 
+<tr> 
+<td align="right" valign="middle"> 
+<b>Ежемесячный платеж:</b> 
+</td><td align="left" valign="middle">
+<b id="a12" style="color:#000080;">пусто</b>
+</td></tr>
+<tr> 
+<td align="right" valign="middle"> 
+<b>Удорожание товара:</b>
+</td><td align="left" valign="middle">
+<b id="a15" style="color:#000080;">пусто</b>
+</td></tr>
+</table> 
+</div> 
+<script type="text/javascript"> 
+<!--  
+document.oncontextmenu = killContextMenu; 
+window.onload = focusFirst; 
+var leftmost = -900;
+var rightmost = 5;
+var interval = null; 
+var DOMCapable; 
+document.getElementById ? DOMCapable = true : DOMCapable = false;
+function scrollRight(menuName)
+{
+var leftPosition;
+if (DOMCapable)
+{
+leftPosition =
+parseInt(document.getElementById(menuName).style.left);
+if (leftPosition >= rightmost)
+{
+// if the menu is already fully shown, stop scrolling
+clearInterval(interval);
+return;
+} 
+else  
+{
+// else move it 5 more pixels in
+leftPosition += 50; 
+document.getElementById(menuName).style.left = leftPosition+"px";
+}
+}
+}
+function scrollLeft(menuName) 
+{
+if (DOMCapable) 
+{
+leftPosition = parseInt(document.getElementById(menuName).style.left);
+if (leftPosition < leftmost)
+{
+// if menu is fully retracted, stop scrolling
+clearInterval(interval);
+return;
+}
+else 
+{  
+// else move it 5 more pixels out 
+leftPosition -= 50;
+document.getElementById(menuName).style.left = leftPosition+"px";
+}
+}
+} 
+function startRightScroll(menuName)
+{ 
+clearInterval(interval);
+interval = setInterval('scrollRight("' + menuName + '")', 5);
+}
+function startLeftScroll(menuName) 
+{ 
+clearInterval(interval);
+interval = setInterval('scrollLeft("' + menuName + '")', 5);
+} 
+function pokaz() 
+{
+document.getElementById('slider').style.left=leftmost+'px';
+document.getElementById('slider2').style.left=leftmost+'px';
+document.getElementById('slider3').style.left=leftmost+'px';
+}
+function startScrollAll()
+{ 
+if (parseFloat(document.getElementById('slider').style.left) < 0)
+startRightScroll('slider');
+else
+startLeftScroll('slider'); 
+}
+function startScrollAll2()
+{ 
+if (parseFloat(document.getElementById('slider2').style.left) < 0)
+startRightScroll('slider2');
+else
+startLeftScroll('slider2');
+}
+function startScrollAll3()
+{ 
+if (parseFloat(document.getElementById('slider3').style.left) < 0)
+startRightScroll('slider3');
+else
+startLeftScroll('slider3');
+}
+window.onload = pokaz;
+//-->
+</script>
+<div style="font-size: 12px; color:#3300cc;">&copy; 2006 by Ponomarev Dmitry <a href="http://dmitry-ponomarev.ru">http://dmitry-ponomarev.ru</a></div>
+</body>
+</html>  
