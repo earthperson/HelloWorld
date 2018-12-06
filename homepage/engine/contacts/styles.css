@@ -1,0 +1,21 @@
+div.mail, div.icq, div.vkontakte {
+    color: black;
+	margin-bottom: 2px;
+}
+div.vkontakte a:hover {
+    top: 0px;
+    text-decoration: underline;
+}
+div.icq {
+	font-family: 'Courier New';
+}
+div.contactsform {
+	color: black;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.input {
+	left: 100px;
+}
+#contactserrorinternal {
+	color: maroon;
+}

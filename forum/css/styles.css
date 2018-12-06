@@ -1,0 +1,71 @@
+body {
+height:100%;
+margin: 4px 2px 0;
+padding: 4px 2px 0;
+color: #000;
+background: #fff;
+font: 14px Arial, Tahoma, Helvetica, sans-serif;
+}
+
+a:link {color: #00f; text-decoration: none; cursor: pointer; font-size:12px;}
+a:active {color: #00f; text-decoration: none; cursor: pointer; font-size:12px;}
+a:visited {color: #009; text-decoration: none; cursor: pointer; font-size:12px;}
+a:hover {color: #900; text-decoration: underline; cursor: pointer; font-size:12px;}
+
+h3 {
+	color: navy;
+	text-align: center;
+}
+input, textarea {
+	position: relative;
+	left: 170px;
+	width: 300px;
+	border: 1px solid black;
+	margin: 2px;
+}
+label {
+	position: absolute;
+	color: navy;
+}
+.line {
+	float: left;
+	padding: 2px 4px;
+	width: 200px;
+	border-bottom: 1px solid black;
+	text-align: center;
+}
+.topic {
+	float: left;
+	padding: 2px 4px;
+	width: 200px;
+	border-bottom: 1px solid black;
+	border-top: 1px solid black;
+	color: navy;
+	font-weight: bold;
+	text-align: center;
+}
+.error {
+     color: maroon;
+     font-family: monospace;
+     font-size: 12px;
+     border: 1px solid maroon;
+     background: #fcf;
+     padding: 2px;
+     margin: 1px;
+     margin-bottom: 4px;
+     text-align: justify;
+     cursor: default;
+     z-index: 50;
+}
+.no_error {
+     color: #363;
+     font-family: monospace;
+     font-size: 12px;
+     border: 1px solid #363;
+     background: #cf9;
+     padding: 2px;
+     margin: 1px;
+     margin-bottom: 4px;
+     text-align: center;
+     cursor: default;
+}

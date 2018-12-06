@@ -1,0 +1,41 @@
+.canvas {
+    background: #d4d0c8;
+}
+.legend, .schedule, .legend-header, .schedule-header {
+    position: relative;
+    background: #6d9cc9;
+}
+.month-line, .name, .schedule-frame, .legend-item, .schedule-item {
+    position: relative;
+}
+.month-line {
+    width:1px;
+    background: gray;
+}
+.name {
+    color: white;
+}
+.
+.schedule, .schedule-header, .schedule-item {
+    font-size: 0px;
+    line-height: 0px;
+}
+.schedule-item {
+    background: maroon;
+    border: 1px solid white;
+}
+.schedule-frame {
+    overflow: hidden;
+}
+.scale-control a {
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+.scale-control .plus {
+    color: red;
+}
+.scale-control .minus {
+    color: navy;
+}     

@@ -1,0 +1,45 @@
+a.index {
+	color: #27619C;
+	text-decoration: none;
+}
+
+a.index:hover {
+	color: black;
+}
+
+table {
+	margin: auto;
+	border-width: 0px;
+}
+
+div.main {
+	text-align: center;
+	border: 1px solid black;
+	margin: 2px;
+	padding: 2px;
+	background: url('../../img/index_home_img.gif') 100% 90% no-repeat;
+}
+
+div.saying {
+	font-family: serif;
+	text-align: left;
+	padding: 6% 0 2% 10px;
+}
+
+div.phrase {
+	color: #27619C;
+}
+
+div.description {
+	color: #999;
+}
+
+div.author {
+	color: #999;
+}
+
+div.cookie {
+	text-align: left;
+	color: #27619C;
+	padding: 1% 0 1% 10px;
+}

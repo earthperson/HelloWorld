@@ -1,0 +1,69 @@
+html, body {	
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    background: #ffffff;    
+}
+body, li, th, td, p, div, span, input, textarea, select, option {
+    font-size: 10px;
+	font-family: Verdana, sans-serif; 
+	color: #000000;
+}
+a { 
+	text-decoration: underline;
+	color: #000000;
+	cursor: pointer;
+}
+a:hover { 
+	text-decoration: none;
+}
+form, table {
+	padding: 0px;	
+	margin: 0px;
+}
+label {
+	white-space: nowrap;
+}
+img {
+    border-width: 0px;
+}
+h1, h2, h3 {
+    padding: 0px;	
+	margin: 0px;
+	padding-bottom: 8px;
+}
+p {
+	padding: 0px;	
+	margin: 0px;
+	padding-bottom: 8px;
+}
+h1 {
+    font-size: 22px;
+}
+h2 {
+	font-size: 20px;
+}
+h3 {
+	font-size: 16px;
+}
+
+.page-title {
+	text-align: center;
+	width: 450px;
+	color: #73796B;
+	margin: 12px auto;
+	padding-top: 4px;
+	background: url('/img/filemanager.gif') top left no-repeat;
+}
+.box {
+	width: 950px;
+	margin: auto;
+}
+.box th, .box td {
+	width: 50%;
+}
+input {
+	display: block;
+	margin: 4px;
+	width: 150px;
+}

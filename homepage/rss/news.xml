@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Домашняя страница Пономарева Дмитрия</title>
+    <link>http://dmitry-ponomarev.ru/main.php</link>
+    <description />
+    <atom:link href="http://dmitryponomarev.ru/rss/news.xml" rel="self" type="application/rss+xml" />
+  <item>
+	<title>22:40 09 ноября 2008</title>
+	<link>http://dmitry-ponomarev.ru/main.php</link>
+	<description>Добавлена система Orphus. Автор: Дмитрий Котеров.
+</description>
+	</item>
+<item>
+	<title>22:49 23 августа 2008</title>
+	<link>http://dmitry-ponomarev.ru/main.php</link>
+	<description>Удалена часть разделов, планируется изменить хранение файлов и функций раздела &quot;Классы и функции&quot; в обычных текстовых файлах на файлы базы данных SQLite.  </description>
+	</item>
+<item>
+	<title>22:44 23 августа 2008</title>
+	<link>http://dmitry-ponomarev.ru/main.php</link>
+	<description>Сайт переехал на новый хостинг и также изменил доменное имя - теперь имя и фамилия пишется через дефис, а не слитно как раньше.</description>
+	</item>
+<item>
+	<title>00:23 16 июня 2008</title>
+	<link>http://www.dmitryponomarev.ru/main.php</link>
+	<description>В раздел "Классы и функции" добавлена простейшая функция для работы с placeholder-ами. Автор: Dmitry Koterov</description>
+	</item>
+<item>
+	<title>23:55 21 мая 2008</title>
+	<link>http://www.dmitryponomarev.ru/main.php</link>
+	<description>Раздел "Эксперименты с картой" удален :)</description>
+	</item>
+  </channel>
+</rss>

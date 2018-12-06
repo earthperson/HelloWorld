@@ -1,0 +1,2 @@
+<!--#set var="TITLE" value="Доступ запрещен | 403 Forbidden"-->
+<!--#include virtual="base.shtml"-->

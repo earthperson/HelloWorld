@@ -1,0 +1,2 @@
+<!--#set var="TITLE" value="Cтраница не найдена | 404 Not Found"-->
+<!--#include virtual="base.shtml"-->

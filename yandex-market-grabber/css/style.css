@@ -1,0 +1,41 @@
+html, body {	
+    margin: 0px;
+    padding: 0px;
+}
+html {
+	font-size: 82%;
+}
+body {
+	text-align: center;
+	background: url('../images/bg.jpg') top right no-repeat;
+}
+body, p, li, th, td, div, span, input, textarea, select, option {
+	font-family: sans-serif;
+	color: #1b4f88;
+}
+table, form {
+	padding: 0px;	
+	margin: 0px;
+}
+img {
+    border-width: 0px;
+}
+h1 {
+	margin: 0px;
+	padding: 20px;
+}
+h1 a {
+	color: #1b4f88;
+	text-decoration: none;
+}
+#main {
+	width: 500px;
+	margin: auto;
+	text-align: left;
+}
+#progressbar {
+	height: 18px;
+}
+.button {
+	cursor: pointer;
+}

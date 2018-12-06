@@ -1,0 +1,178 @@
+body {
+height:100%;
+margin: 4px 2px 0;
+padding: 4px 2px 0;
+color: black;
+background: #f5f5f5;
+font: 14px Arial, Tahoma, Helvetica, sans-serif;
+/*Georgia, 'Times New Roman', Times, serif;*/
+}
+
+h1 {color: #27619C; font: 35px serif; text-align: center; padding: 30px 0 20px 0;}
+h3 {color: #27619C; font-size: 14px; text-align: center;}
+
+a:link {color: #00f; text-decoration: none; cursor: pointer; font-size:12px;}
+a:visited {color: #009; text-decoration: none; font-size:12px;}
+a:hover {color: #900; position: relative; top: -1px; cursor: pointer; font-size:12px;}
+
+/* у всех ссылок с фоновыми картинками устанавливать display: block; и ширину */
+
+a.home {background: url('../../img/home_off.gif') no-repeat top left; padding-left: 17px; display: block; width: 100px;}
+a.home:visited {background: url('../../img/home_visited.gif') no-repeat top left;}
+a.home:hover {background: url('../../img/home_on.gif') no-repeat top left !important;
+position: relative; top: -1px; text-decoration: underline; padding-left: 17px;}
+
+a.menu {background: url('../../img/page_off.gif') no-repeat top left; padding-left: 17px; display: block; width: 70%;}
+a.menu:visited {background: url('../../img/page_visited.gif') no-repeat top left;}
+a.menu:hover {background: url('../../img/page_on.gif') no-repeat top left !important;}
+
+/* выделение областей рамкой */
+div.border {
+	border: 1px solid black;
+	padding: 4px;
+}
+
+/* сообщения типа warning */
+em {
+    font-size: 14px;
+    color: #963;
+	font-family: monospace;
+}
+
+/* общее для форм */
+input {
+	border: 1px solid black;
+}
+textarea {
+	border: 1px solid black;
+}
+
+/* страница сгенерирована за */
+.timeOfGeneration {
+	font-size: 11px;
+	/*color:#27619c;*/
+	color: #999;
+}
+/* информация для размышления */
+.info {
+	font-size: 12px;
+	color: #27619C;
+}
+/* формы */
+.input {
+	margin: 2px;
+	position: relative;
+	left: 70px;
+}
+
+label {
+	position: absolute;
+}
+div.banner {
+	padding: 4px;
+}
+.section_title {
+	font-weight: bold;
+	color: #27619C;
+	margin-bottom: 4px;
+}
+div.tree {
+    padding: 2px;
+    font-weight: bold;
+    font-size: 12px;
+    color: #27619C;
+}
+div.tree a:link{
+	cursor: pointer;
+	border: 1px solid black;
+	background: white;
+	color: black;
+	font-weight: normal;
+	padding: 0 4px;
+	font-size: 14px;
+}
+div.tree a:active{
+	cursor: pointer;
+	border: 1px solid black;
+	background: white;
+	color: black;
+	font-weight: normal;
+	padding: 0 4px;
+	font-size: 14px;
+}
+div.tree a:visited{
+	cursor: pointer;
+	border: 1px solid black;
+	background: white;
+	color: black;
+	font-weight: normal;
+	padding: 0 4px;
+	font-size: 14px;
+}
+div.tree a:hover{
+	cursor: pointer;
+	border: 1px solid black;
+	background: white;
+	color: black;
+	font-weight: normal;
+	padding: 0 4px;
+	font-size: 14px;
+}
+.error {
+	color: maroon;
+	font-family: monospace;
+	border: 1px solid maroon;
+	background: #fcf;
+	padding: 2px;
+	margin: 1px;
+	text-align: justify;
+	cursor: default;
+}
+.no_error {
+	color: #363;
+	font-family: monospace;
+	border: 1px solid #363;
+	background: #cf9;
+	padding: 2px;
+	margin: 1px;
+	text-align: center;
+	cursor: default;
+}
+div.nav_page {
+	padding: 2px;
+    text-align: center;
+	font-size: 12px;
+    font-family: sans-serif;
+    margin: 5px 0;
+}
+div.selfmenu {
+    margin-bottom: 18px;
+    border-bottom: 4px double black;
+}
+ul {
+    list-style-type: square;
+    color: navy;
+}
+ul span {
+    color: black;
+}
+b.tree {
+	cursor: pointer;
+	border: 1px solid black;
+	background: white;
+	color: black;
+	font-weight: normal;
+	padding: 0 4px;
+}
+b.tree:hover {
+	
+}
+span.nowrap {
+	white-space: nowrap;
+}
+/* Цветовая схема */
+.style1  {background: #f5f5f5;  color: black;}
+.style2  {background: #e6e6fa;  color: black;}
+.style3  {background: #d6ebf7;  color: black;}
+.style4  {background: #ffffff;  color: black;}
+.style5  {background: #cccccc;  color: black;}

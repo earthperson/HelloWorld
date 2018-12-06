@@ -1,0 +1,16 @@
+Usage: ./imodem.php [options]
+
+-c, --check		: Checking  modem
+-D=<device>		: Set device name (ignore the value from config)
+-h, --help              : This help
+-v, --version		: Output version information and exit
+-m, --manufacturer	: Set all current parameters to manufacturer defaults
+
+--at=<at>               : Write AT command and output reply
+--ussd=<command>        : Send USSD command and output reply
+--sms-da=<da>           : SMS destination address
+--sms-text=<text>	: SMS text
+--sms-text-encoded	: SMS text is base64 encoded
+--sms-flash		: Send flash message
+
+

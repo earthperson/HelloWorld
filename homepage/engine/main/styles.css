@@ -1,0 +1,118 @@
+a.favorite {background: url('../../img/favorite_off.gif') no-repeat top left; padding-left: 17px; display: block; width: 16px;}
+a.favorite:hover {background: url('../../img/favorite_on.gif') no-repeat top left;}
+
+div.main {
+	padding: 0px;
+}
+table {
+	width: 100%;
+}
+td {
+	vertical-align: top;
+}
+div.journalform, div.descriptionform, div.newsform, div.logosform {
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+div.greeting {
+	text-align: justify;
+	margin-bottom: 10px;
+	text-indent: 1.5em;
+}
+div.news {
+	text-align: justify;
+	text-indent: 1.5em;
+}
+div.voting {
+	margin-top: 4px;
+}
+div.links {
+
+}
+div.menu {
+	margin-bottom: 10px;
+}
+div.projects {
+	margin-bottom: 10px;
+}
+div.journalnote {
+	padding: 2px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+div.all_notes {
+	padding: 2px;
+	text-align: right;
+	font-size: 12px;
+    font-family: sans-serif;
+    margin-top: 5px;
+}
+div.journalbox {
+	margin-top: 10px;
+	padding: 2px;
+	border: 1px solid black;
+}
+div.journaltimestamp {
+	color: #27619C;
+}
+span.journalname, span.journalmsg {
+	color: #999;
+}
+div.journalnumchars {
+	display: none;
+	color: #999;
+	padding: 2px;
+	font-family: sans-serif;	
+}
+.download {
+	font-size: 11px;
+	border-bottom: 4px double black;
+}
+.scrs {
+	position: absolute;
+	top: 2px;
+	left: 10px;
+}
+#clock {
+	width: 400px;
+	position: absolute;
+	right: 10px;
+	top: 2px;
+	text-align: left;
+}
+div.newsdate {
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	color: #27619C;
+}
+div.newsdata {
+    margin-bottom: 4px;
+}
+span.smallcaps {
+    font-family: 'Comic Sans MS';
+    font-variant: small-caps;
+    font-weight: bold;
+	letter-spacing: 5px;
+	color: #999;
+}
+div.votingform {
+	padding: 0 2px 10px;
+}
+div.votingform input{
+	border: 0px;
+	margin-left: 10px;
+}
+div.votingform label{
+	position: static;
+}
+div.submenulink {
+	font-size: 12px;
+	padding: 4px;
+}
+.rss {
+    padding: 0 0 0 19px;
+	background: url('../../img/feed.png') no-repeat 0 50%;
+}
+.pr_sc {
+    font-family: 'Comic Sans MS';
+	font-variant: small-caps;
+	font-weight: bold;
+	color: #999;
+}
