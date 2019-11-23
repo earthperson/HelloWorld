@@ -293,7 +293,15 @@ ii  kdepasswd                             4:4.8.4-2                          amd
 ii  kdepim-runtime                        4:4.4.11.1-6                       amd64        runtime components for Akonadi KDE
 ii  kdepimlibs-kio-plugins                4:4.8.4-2+deb7u1                   amd64        kio slaves used by KDE PIM applications
 ii  kdesudo                               3.4.2.4-2                          amd64        sudo frontend for KDE
+ii  kdesvn                                1.5.5-4.1                          amd64        Subversion client with tight KDE integration
+ii  kdesvn-kio-plugins                    1.5.5-4.1                          amd64        Subversion I/O slaves for KDE
+ii  kdevelop                              4:4.3.1-3+b1                       amd64        integrated development environment for KDE
+ii  kdevelop-data                         4:4.3.1-3                          all          data files for the KDevelop IDE
+ii  kdevelop-php                          1.3.1-2                            amd64        PHP plugin for KDevelop
+ii  kdevplatform5-libs                    1.3.1-2                            amd64        shared libraries for the KDevelop platform
 ii  kdiamond                              4:4.8.4-3                          amd64        three-in-a-row game
+ii  kdiff3                                0.9.96-4                           amd64        compares and merges 2 or 3 files or directories
+ii  kdiff3-doc                            0.9.96-4                           all          documentation for kdiff3
 ii  kdm                                   4:4.8.4-6                          amd64        KDE Display Manager for X11
 ii  kdoctools                             4:4.8.4-4+deb7u3                   amd64        various tools for accessing application documentation
 ii  keepassx                              0.4.3+dfsg-0.1                     amd64        Cross Platform Password Manager
@@ -321,6 +329,7 @@ ii  knemo                                 0.7.3-1                            amd
 ii  knetwalk                              4:4.8.4-3                          amd64        wire puzzle game
 ii  kolf                                  4:4.8.4-3                          amd64        miniature golf game
 ii  kollision                             4:4.8.4-3                          amd64        simple ball dodging game
+ii  kompare                               4:4.8.4+dfsg-1                     amd64        file difference viewer
 ii  konqueror                             4:4.8.4-2                          amd64        advanced file manager, web browser and document viewer
 ii  konqueror-nsplugins                   4:4.8.4-2                          amd64        Netscape plugin support for Konqueror
 ii  konquest                              4:4.8.4-3                          amd64        simple turn-based strategy game
@@ -690,6 +699,12 @@ ii  libk5crypto3:amd64                    1.10.1+dfsg-5+deb7u9               amd
 ii  libkabc4                              4:4.8.4-2+deb7u1                   amd64        library for handling address book data
 ii  libkactivities-bin                    4:4.8.4-1                          amd64        executables for the KDE Activities
 ii  libkactivities6                       4:4.8.4-1                          amd64        Activities library
+ii  libkasten1controllers1                4:4.8.4+dfsg-1                     amd64        controllers Kasten library for Okteta
+ii  libkasten1core1                       4:4.8.4+dfsg-1                     amd64        core Kasten library for Okteta
+ii  libkasten1gui1                        4:4.8.4+dfsg-1                     amd64        gui Kasten library for Okteta
+ii  libkasten1okteta1controllers1         4:4.8.4+dfsg-1                     amd64        kastencontrollers library for Okteta
+ii  libkasten1okteta1core1                4:4.8.4+dfsg-1                     amd64        kastencore library for Okteta
+ii  libkasten1okteta1gui1                 4:4.8.4+dfsg-1                     amd64        kastengui library for Okteta
 ii  libkate1                              0.4.1-1                            amd64        Kate is a codec for karaoke and text encapsulation
 ii  libkatepartinterfaces4                4:4.8.4-1                          amd64        kate part library
 ii  libkcal4                              4:4.8.4-2+deb7u1                   amd64        library for handling calendar data
@@ -847,6 +862,8 @@ rc  libodbc1:amd64                        2.2.14p2-5                         amd
 ii  libofa0                               0.9.3-5                            amd64        Library for acoustic fingerprinting
 ii  libogg0:amd64                         1.3.0-4                            amd64        Ogg bitstream library
 ii  liboggkate1                           0.4.1-1                            amd64        Kate is a codec for karaoke and text encapsulation for Ogg
+ii  libokteta1core1                       4:4.8.4+dfsg-1                     amd64        core Okteta library
+ii  libokteta1gui1                        4:4.8.4+dfsg-1                     amd64        gui Okteta library
 ii  libokularcore1                        4:4.8.4-3+b1                       amd64        libraries for the Okular document viewer
 ii  libonig2                              5.9.1-1+deb7u1                     amd64        Oniguruma regular expressions library
 ii  libopenal-data                        1:1.14-4                           all          Software implementation of the OpenAL API (data files)
@@ -1073,8 +1090,10 @@ ii  libstdc++6:amd64                      4.7.2-5                            amd
 ii  libstdc++6-4.7-dev                    4.7.2-5                            amd64        GNU Standard C++ Library v3 (development files)
 ii  libstreamanalyzer0                    0.7.7-3                            amd64        streamanalyzer library for Strigi Desktop Search
 ii  libstreams0                           0.7.7-3                            amd64        streams library for for Strigi Desktop Search
+ii  libsublime5                           1.3.1-2                            amd64        User interface library
 ii  libsvn-java                           1.6.17dfsg-4+deb7u12               amd64        Java bindings for Subversion
 ii  libsvn1:amd64                         1.6.17dfsg-4+deb7u12               amd64        Shared libraries used by Subversion
+ii  libsvnqt6                             1.5.5-4.1                          amd64        Qt wrapper library for Subversion
 ii  libswitch-perl                        2.16-2                             all          switch statement for Perl
 ii  libswscale2:amd64                     6:0.8.21-0+deb7u1                  amd64        Libav video scaling library
 ii  libsyndication4                       4:4.8.4-2+deb7u1                   amd64        parser library for RSS and Atom feeds
@@ -1308,6 +1327,7 @@ ii  nginx-full                            1.2.1-2.2+wheezy4+deb7u1           amd
 ii  nodejs                                0.10.46-1nodesource1~wheezy1       amd64        Node.js event-based server-side javascript engine
 ii  ntfs-3g                               1:2012.1.15AR.5-2.1+deb7u3         amd64        read/write NTFS driver for FUSE
 ii  ntrack-module-libnl-0                 016-1.1                            amd64        libnl based ntrack module
+ii  numlockx                              1.2-4                              amd64        enable NumLock in X11 sessions
 ii  odbcinst                              2.2.14p2-5                         amd64        Helper program for accessing odbc ini files
 ii  odbcinst1debian2:amd64                2.2.14p2-5                         amd64        Support library for accessing odbc ini files
 ii  okular                                4:4.8.4-3+b1                       amd64        universal document viewer
@@ -1533,6 +1553,7 @@ ii  ucf                                   3.0025+nmu3                        all
 ii  udev                                  175-7.2                            amd64        /dev/ and hotplug management daemon
 ii  udisks                                1.0.4-7wheezy1                     amd64        storage media interface
 ii  ufraw-batch                           0.18-2                             amd64        batch importer for raw camera images
+ii  umbrello                              4:4.8.4+dfsg-1                     amd64        UML modelling tool and code generator
 ii  uno-libs3                             3.5.4+dfsg2-0+deb7u11              amd64        LibreOffice UNO runtime environment -- public shared libraries
 ii  unzip                                 6.0-8+deb7u6                       amd64        De-archiver for .zip files
 ii  update-inetd                          4.43                               all          inetd configuration file updater
