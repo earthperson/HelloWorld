@@ -50,12 +50,13 @@ ii  bovo                                  4:4.8.4-3                          amd
 ii  bsd-mailx                             8.1.2-0.20111106cvs-1+deb7u1       amd64        simple mail user agent
 ii  bsdmainutils                          9.0.3                              amd64        collection of more utilities from FreeBSD
 ii  bsdutils                              1:2.20.1-5.3                       amd64        Basic utilities from 4.4BSD-Lite
-rc  bsh                                   2.0b4-12+deb7u2                    all          Java scripting environment (BeanShell) Version 2
-rc  bsh-gcj                               2.0b4-12+deb7u2                    amd64        Java scripting environment (BeanShell) Version 2 (native code)
+ii  bsh                                   2.0b4-12+deb7u2                    all          Java scripting environment (BeanShell) Version 2
+ii  bsh-gcj                               2.0b4-12+deb7u2                    amd64        Java scripting environment (BeanShell) Version 2 (native code)
 ii  build-essential                       11.5                               amd64        Informational list of build-essential packages
 ii  busybox                               1:1.20.0-7                         amd64        Tiny utilities for small and embedded systems
 ii  bzip2                                 1.0.6-4                            amd64        high-quality block-sorting file compressor - utilities
 ii  ca-certificates                       20130119+deb7u3                    all          Common CA certificates
+ii  ca-certificates-java                  20121112+nmu2                      all          Common CA certificates (JKS keystore)
 ii  cabextract                            1.4-3                              amd64        Microsoft Cabinet file unpacker
 ii  cmake                                 2.8.9-1                            amd64        cross-platform, open-source make system
 ii  cmake-data                            2.8.9-1                            all          CMake data files (modules, templates and documentation)
@@ -91,6 +92,8 @@ ii  debconf-i18n                          1.5.49                             all
 ii  debian-archive-keyring                2014.3~deb7u1                      all          GnuPG archive keys of the Debian archive
 ii  debian-faq                            5.0.1                              all          Debian FAQ
 ii  debianutils                           4.3.2                              amd64        Miscellaneous utilities specific to Debian
+ii  default-jre                           1:1.7-47+deb7u2                    amd64        Standard Java or Java compatible Runtime
+ii  default-jre-headless                  1:1.7-47+deb7u2                    amd64        Standard Java or Java compatible Runtime (headless)
 ii  desktop-file-utils                    0.20-0.1                           amd64        Utilities for .desktop files
 ii  dictionaries-common                   1.12.11                            all          Common utilities for spelling dictionary tools
 ii  diffutils                             1:3.2-6                            amd64        File comparison utilities
@@ -111,6 +114,7 @@ ii  dpkg-dev                              1.16.18                            all
 ii  e2fslibs:amd64                        1.42.5-1.1+deb7u1                  amd64        ext2/ext3/ext4 file system libraries
 ii  e2fsprogs                             1.42.5-1.1+deb7u1                  amd64        ext2/ext3/ext4 file system utilities
 ii  eject                                 2.1.5+deb1+cvs20081104-13+deb7u1   amd64        ejects CDs and operates CD-Changers under Linux
+ii  electric                              8.10-2                             all          electrical CAD system
 ii  emacs                                 45.0                               all          GNU Emacs editor (metapackage)
 ii  emacs23                               23.4+1-4+deb7u1                    amd64        The GNU Emacs editor (with GTK+ user interface)
 ii  emacs23-bin-common                    23.4+1-4+deb7u1                    amd64        The GNU Emacs editor's shared, architecture dependent files
@@ -245,6 +249,8 @@ ii  isc-dhcp-client                       4.2.2.dfsg.1-5+deb70u9             amd
 ii  isc-dhcp-common                       4.2.2.dfsg.1-5+deb70u9             amd64        common files used by all the isc-dhcp* packages
 ii  iso-codes                             3.41-1                             all          ISO language, territory, currency, script codes and their translations
 ii  ispell                                3.3.02-6                           amd64        International Ispell (an interactive spelling corrector)
+ii  java-common                           0.47+deb7u2                        all          Base of all Java packages
+ii  java-wrappers                         0.1.25                             all          wrappers for java executables
 ii  javascript-common                     7                                  all          Base support for javascript library packages
 ii  kajongg                               4:4.8.4-3                          all          classical Mah Jongg game
 ii  kapman                                4:4.8.4-3                          amd64        Pac-Man clone
@@ -392,6 +398,8 @@ ii  libass4:amd64                         0.10.0-3+deb7u1                    amd
 ii  libassuan0:amd64                      2.0.3-1                            amd64        IPC library for the GnuPG components
 ii  libasyncns0:amd64                     0.8-4                              amd64        Asynchronous name service query library
 ii  libatasmart4:amd64                    0.19-1                             amd64        ATA S.M.A.R.T. reading and parsing library
+ii  libatk-wrapper-java                   0.30.4-3                           all          ATK implementation for Java using JNI
+ii  libatk-wrapper-java-jni:amd64         0.30.4-3                           amd64        ATK implementation for Java using JNI (JNI bindings)
 ii  libatk1.0-0:amd64                     2.4.0-2                            amd64        ATK accessibility toolkit
 ii  libatk1.0-data                        2.4.0-2                            all          Common files for the ATK accessibility toolkit
 ii  libatkmm-1.6-1                        2.22.6-1                           amd64        C++ wrappers for ATK accessibility toolkit (shared libraries)
@@ -558,6 +566,7 @@ ii  libfuse2:amd64                        2.9.0-2+deb7u2                     amd
 ii  libgail18:amd64                       2.24.10-2                          amd64        GNOME Accessibility Implementation Library -- shared libraries
 ii  libgc1c2                              1:7.1-9.1+deb7u1                   amd64        conservative garbage collector for C and C++
 ii  libgcc1:amd64                         1:4.7.2-5                          amd64        GCC support library
+ii  libgcj-bc:amd64                       4.7.2-1                            amd64        Link time only library for use with gcj
 ii  libgcj-common                         1:4.6.3-8                          all          Java runtime library (common files)
 ii  libgcj13                              4.7.2-3                            amd64        Java runtime library for use with gcj
 ii  libgcj13-awt                          4.7.2-3                            amd64        AWT peer runtime libraries for use with gcj
@@ -675,7 +684,10 @@ ii  libiso9660-8                          0.83-4                             amd
 ii  libitm1:amd64                         4.7.2-5                            amd64        GNU Transactional Memory Library
 ii  libiw30:amd64                         30~pre9-8                          amd64        Wireless tools - library
 ii  libjack-jackd2-0:amd64                1.9.8~dfsg.4+20120529git007cdc37-5 amd64        JACK Audio Connection Kit (libraries)
+ii  libjargs-java                         1.0.0-3                            all          Command-line argument parsing for Java
 ii  libjasper1:amd64                      1.900.1-13+deb7u6                  amd64        JasPer JPEG-2000 runtime library
+ii  libjava3d-java                        1.5.2+dfsg-8                       all          Java 3D API (java library)
+ii  libjava3d-jni                         1.5.2+dfsg-8                       amd64        Java3D API (java jni library)
 ii  libjavascriptcoregtk-1.0-0            1.8.1-3.4                          amd64        Javascript engine library for GTK+
 rc  libjavascriptcoregtk-3.0-0            1.8.1-3.4                          amd64        Javascript engine library for GTK+
 ii  libjaxp1.3-java                       1.3.05-2                           all          Java XML parser and transformer APIs (DOM, SAX, JAXP, TrAX)
@@ -1009,7 +1021,7 @@ ii  libsane-hpaio                         3.12.6-3.1+deb7u2                  amd
 ii  libsasl2-2:amd64                      2.1.25.dfsg1-6+deb7u1              amd64        Cyrus SASL - authentication abstraction library
 ii  libsasl2-modules:amd64                2.1.25.dfsg1-6+deb7u1              amd64        Cyrus SASL - pluggable authentication modules
 ii  libschroedinger-1.0-0:amd64           1.0.11-2                           amd64        library for encoding/decoding of Dirac video streams
-rc  libsctp1                              1.0.11+dfsg-2                      amd64        user-space access to Linux Kernel SCTP - shared library
+ii  libsctp1                              1.0.11+dfsg-2                      amd64        user-space access to Linux Kernel SCTP - shared library
 ii  libsdl-image1.2:amd64                 1.2.12-2+deb7u2                    amd64        Image loading library for Simple DirectMedia Layer 1.2, libraries
 ii  libsdl1.2debian:amd64                 1.2.15-5                           amd64        Simple DirectMedia Layer
 ii  libselinux1:amd64                     2.1.9-5                            amd64        SELinux runtime shared libraries
@@ -1131,6 +1143,7 @@ ii  libv4lconvert0:amd64                  0.8.8-3                            amd
 ii  libva-x11-1:amd64                     1.0.15-4                           amd64        Video Acceleration (VA) API for Linux -- X11 runtime
 ii  libva1:amd64                          1.0.15-4                           amd64        Video Acceleration (VA) API for Linux -- runtime
 ii  libvcdinfo0                           0.7.24+dfsg-0.1                    amd64        library to extract information from VideoCD
+ii  libvecmath-java                       1.5.2-3                            all          javax.vecmath vector math package
 ii  libvirtodbc0                          6.1.4+dfsg1-7                      amd64        high-performance database - ODBC libraries
 ii  libvisio-0.0-0                        0.0.17-1                           amd64        library for parsing the visio file structure
 ii  libvisual-0.4-0:amd64                 0.4.0-5                            amd64        Audio visualization framework
@@ -1251,6 +1264,7 @@ ii  linux-image-3.2.0-6-amd64             3.2.102-1                          amd
 ii  linux-image-amd64                     3.2+46+deb7u2                      amd64        Linux for 64-bit PCs (meta-package)
 ii  linux-kbuild-3.2                      3.2.101-1                          amd64        Kbuild infrastructure for Linux 3.2
 ii  linux-libc-dev:amd64                  3.2.102-1                          amd64        Linux support headers for userspace development
+ii  lksctp-tools                          1.0.11+dfsg-2                      amd64        user-space access to Linux Kernel SCTP - commandline tools
 ii  locales                               2.13-38+deb7u12                    all          Embedded GNU C Library: National Language (locale) data [support]
 ii  login                                 1:4.1.5.1-1+deb7u1                 amd64        system login tools
 ii  logrotate                             3.8.1-4                            amd64        Log rotation utility
@@ -1314,6 +1328,8 @@ ii  numlockx                              1.2-4                              amd
 ii  odbcinst                              2.2.14p2-5                         amd64        Helper program for accessing odbc ini files
 ii  odbcinst1debian2:amd64                2.2.14p2-5                         amd64        Support library for accessing odbc ini files
 ii  okular                                4:4.8.4-3+b1                       amd64        universal document viewer
+ii  openjdk-7-jre:amd64                   7u171-2.6.13-1~deb7u1              amd64        OpenJDK Java runtime, using Hotspot JIT
+ii  openjdk-7-jre-headless:amd64          7u171-2.6.13-1~deb7u1              amd64        OpenJDK Java runtime, using Hotspot JIT (headless)
 ii  openoffice.org                        1:3.4.0~ooo340m1-7                 all          office productivity suite
 ii  openprinting-ppds                     20120523-1                         all          OpenPrinting printer support - PostScript PPD files
 ii  openssh-blacklist                     0.4.1+nmu1                         all          list of default blacklisted OpenSSH RSA and DSA keys
@@ -1524,6 +1540,7 @@ ii  ttf-liberation                        1.07.2-6                           all
 ii  ttf-mscorefonts-installer             3.4+nmu1                           all          Installer for Microsoft TrueType core fonts
 ii  ttf-sil-gentium-basic                 1.1-5                              all          transitional dummy package
 ii  tzdata                                2018e-0+deb7u1                     all          time zone and daylight-saving time data
+ii  tzdata-java                           2018e-0+deb7u1                     all          time zone and daylight-saving time data for use by java runtimes
 ii  ucf                                   3.0025+nmu3                        all          Update Configuration File: preserve user changes to config files.
 ii  udev                                  175-7.2                            amd64        /dev/ and hotplug management daemon
 ii  udisks                                1.0.4-7wheezy1                     amd64        storage media interface
@@ -1592,6 +1609,7 @@ ii  xserver-xorg-input-vmmouse            1:12.9.0-1                         amd
 ii  xserver-xorg-input-wacom              0.15.0+20120515-2                  amd64        X.Org X server -- Wacom input driver
 ii  xterm                                 278-4                              amd64        X terminal emulator
 ii  xz-utils                              5.1.1alpha+20120614-2              amd64        XZ-format compression utilities
+ii  yui-compressor                        2.4.7-1                            all          JavaScript/CSS minifier
 ii  zip                                   3.0-6                              amd64        Archiver for .zip files
 ii  zlib1g:amd64                          1:1.2.7.dfsg-13                    amd64        compression library - runtime
 ii  zlib1g-dev:amd64                      1:1.2.7.dfsg-13                    amd64        compression library - development
