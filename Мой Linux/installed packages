@@ -323,6 +323,7 @@ ii  knemo                                 0.7.3-1                            amd
 ii  knetwalk                              4:4.8.4-3                          amd64        wire puzzle game
 ii  kolf                                  4:4.8.4-3                          amd64        miniature golf game
 ii  kollision                             4:4.8.4-3                          amd64        simple ball dodging game
+ii  kolourpaint4                          4:4.8.4-1                          amd64        simple image editor and drawing application
 ii  kompare                               4:4.8.4+dfsg-1                     amd64        file difference viewer
 ii  konqueror                             4:4.8.4-2                          amd64        advanced file manager, web browser and document viewer
 ii  konqueror-nsplugins                   4:4.8.4-2                          amd64        Netscape plugin support for Konqueror
