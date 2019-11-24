@@ -226,7 +226,6 @@ ii  hunspell-en-us                        20070829-6+deb7u1                  all
 ii  iamerican                             3.3.02-6                           all          American English dictionary for ispell (standard version)
 ii  ibritish                              3.3.02-6                           all          British English dictionary for ispell (standard version)
 ii  icedove                               1:52.8.0-1~deb7u1                  all          mail/news client with RSS and integrated spam filter support
-ii  iceweasel                             52.8.0esr-1~deb7u1                 all          Web browser based on Firefox - Transitional package
 ii  idn                                   1.25-2+deb7u3                      amd64        Command line and Emacs interface to GNU Libidn
 ii  ienglish-common                       3.3.02-6                           all          Common files for British and American ispell dictionaries
 ii  ifupdown                              0.7.8                              amd64        high level tools to configure network interfaces
@@ -249,6 +248,7 @@ ii  ispell                                3.3.02-6                           amd
 ii  javascript-common                     7                                  all          Base support for javascript library packages
 ii  kajongg                               4:4.8.4-3                          all          classical Mah Jongg game
 ii  kapman                                4:4.8.4-3                          amd64        Pac-Man clone
+ii  kate                                  4:4.8.4-1                          amd64        K Advanced Text Editor
 ii  kate-data                             4:4.8.4-1                          all          shared data files for kate
 ii  katepart                              4:4.8.4-1                          amd64        kate KPart
 ii  katomic                               4:4.8.4-3                          amd64        atomix puzzle game
@@ -697,6 +697,7 @@ ii  libkasten1okteta1controllers1         4:4.8.4+dfsg-1                     amd
 ii  libkasten1okteta1core1                4:4.8.4+dfsg-1                     amd64        kastencore library for Okteta
 ii  libkasten1okteta1gui1                 4:4.8.4+dfsg-1                     amd64        kastengui library for Okteta
 ii  libkate1                              0.4.1-1                            amd64        Kate is a codec for karaoke and text encapsulation
+ii  libkateinterfaces4                    4:4.8.4-1                          amd64        kate plugin interface library
 ii  libkatepartinterfaces4                4:4.8.4-1                          amd64        kate part library
 ii  libkcal4                              4:4.8.4-2+deb7u1                   amd64        library for handling calendar data
 ii  libkcalcore4                          4:4.8.4-2+deb7u1                   amd64        library for handling calendar data
