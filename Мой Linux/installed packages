@@ -114,7 +114,6 @@ ii  dpkg-dev                              1.16.18                            all
 ii  e2fslibs:amd64                        1.42.5-1.1+deb7u1                  amd64        ext2/ext3/ext4 file system libraries
 ii  e2fsprogs                             1.42.5-1.1+deb7u1                  amd64        ext2/ext3/ext4 file system utilities
 ii  eject                                 2.1.5+deb1+cvs20081104-13+deb7u1   amd64        ejects CDs and operates CD-Changers under Linux
-ii  electric                              8.10-2                             all          electrical CAD system
 ii  emacs                                 45.0                               all          GNU Emacs editor (metapackage)
 ii  emacs23                               23.4+1-4+deb7u1                    amd64        The GNU Emacs editor (with GTK+ user interface)
 ii  emacs23-bin-common                    23.4+1-4+deb7u1                    amd64        The GNU Emacs editor's shared, architecture dependent files
@@ -310,6 +309,8 @@ ii  kfind                                 4:4.8.4-2                          amd
 ii  kfourinline                           4:4.8.4-3                          amd64        Connect Four game
 ii  kgoldrunner                           4:4.8.4-3                          amd64        Lode Runner arcade game
 ii  kgpg                                  4:4.8.4-4                          amd64        graphical front end for GNU Privacy Guard
+ii  kicad                                 0.20120526+bzr3261-1               amd64        Electronic schematic and PCB design software
+ii  kicad-common                          0.20120526+bzr3261-1               all          Common files used by kicad
 ii  kigo                                  4:4.8.4-3                          amd64        go game
 ii  killbots                              4:4.8.4-3                          amd64        port of the classic BSD console game robots
 ii  kinfocenter                           4:4.8.4-6                          amd64        system information viewer
@@ -1611,5 +1612,6 @@ ii  xterm                                 278-4                              amd
 ii  xz-utils                              5.1.1alpha+20120614-2              amd64        XZ-format compression utilities
 ii  yui-compressor                        2.4.7-1                            all          JavaScript/CSS minifier
 ii  zip                                   3.0-6                              amd64        Archiver for .zip files
+ii  zlib-bin                              1:1.2.7.dfsg-13                    amd64        compression library - sample programs
 ii  zlib1g:amd64                          1:1.2.7.dfsg-13                    amd64        compression library - runtime
 ii  zlib1g-dev:amd64                      1:1.2.7.dfsg-13                    amd64        compression library - development
