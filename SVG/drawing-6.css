@@ -1,0 +1,12 @@
+rect[id="ButtonBase"] {
+  fill: red;
+}
+svg[aria-pressed="true"] rect[id="ButtonBase"] {
+  fill: green;
+}
+g:hover {
+  cursor: pointer
+}     
+g:hover rect[id="ButtonGlow"] {
+  opacity: 0;
+} 
