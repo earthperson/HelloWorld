@@ -50,8 +50,8 @@ ii  bovo                                  4:4.8.4-3                          amd
 ii  bsd-mailx                             8.1.2-0.20111106cvs-1+deb7u1       amd64        simple mail user agent
 ii  bsdmainutils                          9.0.3                              amd64        collection of more utilities from FreeBSD
 ii  bsdutils                              1:2.20.1-5.3                       amd64        Basic utilities from 4.4BSD-Lite
-ii  bsh                                   2.0b4-12+deb7u2                    all          Java scripting environment (BeanShell) Version 2
-ii  bsh-gcj                               2.0b4-12+deb7u2                    amd64        Java scripting environment (BeanShell) Version 2 (native code)
+rc  bsh                                   2.0b4-12+deb7u2                    all          Java scripting environment (BeanShell) Version 2
+rc  bsh-gcj                               2.0b4-12+deb7u2                    amd64        Java scripting environment (BeanShell) Version 2 (native code)
 ii  build-essential                       11.5                               amd64        Informational list of build-essential packages
 ii  busybox                               1:1.20.0-7                         amd64        Tiny utilities for small and embedded systems
 ii  bzip2                                 1.0.6-4                            amd64        high-quality block-sorting file compressor - utilities
@@ -114,7 +114,6 @@ ii  dpkg-dev                              1.16.18                            all
 ii  e2fslibs:amd64                        1.42.5-1.1+deb7u1                  amd64        ext2/ext3/ext4 file system libraries
 ii  e2fsprogs                             1.42.5-1.1+deb7u1                  amd64        ext2/ext3/ext4 file system utilities
 ii  eject                                 2.1.5+deb1+cvs20081104-13+deb7u1   amd64        ejects CDs and operates CD-Changers under Linux
-ii  electric                              8.10-2                             all          electrical CAD system
 ii  emacs                                 45.0                               all          GNU Emacs editor (metapackage)
 ii  emacs23                               23.4+1-4+deb7u1                    amd64        The GNU Emacs editor (with GTK+ user interface)
 ii  emacs23-bin-common                    23.4+1-4+deb7u1                    amd64        The GNU Emacs editor's shared, architecture dependent files
@@ -337,6 +336,7 @@ ii  konqueror                             4:4.8.4-2                          amd
 ii  konqueror-nsplugins                   4:4.8.4-2                          amd64        Netscape plugin support for Konqueror
 ii  konquest                              4:4.8.4-3                          amd64        simple turn-based strategy game
 ii  konsole                               4:4.8.4-2                          amd64        X terminal emulator
+ii  kopete                                4:4.8.4-1+b1                       amd64        instant messaging and chat application
 ii  kpat                                  4:4.8.4-3                          amd64        solitaire card games
 ii  krb5-locales                          1.10.1+dfsg-5+deb7u9               all          Internationalization support for MIT Kerberos
 ii  kreversi                              4:4.8.4-3                          amd64        reversi board game
@@ -565,10 +565,10 @@ ii  libfontenc1:amd64                     1:1.1.1-1                          amd
 ii  libfreetype6:amd64                    2.4.9-1.1+deb7u7                   amd64        FreeType 2 font engine, shared library files
 ii  libfribidi0:amd64                     0.19.2-3                           amd64        Free Implementation of the Unicode BiDi algorithm
 ii  libfuse2:amd64                        2.9.0-2+deb7u2                     amd64        Filesystem in Userspace (library)
+ii  libgadu3                              1:1.11.2-1+deb7u2                  amd64        Gadu-Gadu protocol library - runtime files
 ii  libgail18:amd64                       2.24.10-2                          amd64        GNOME Accessibility Implementation Library -- shared libraries
 ii  libgc1c2                              1:7.1-9.1+deb7u1                   amd64        conservative garbage collector for C and C++
 ii  libgcc1:amd64                         1:4.7.2-5                          amd64        GCC support library
-ii  libgcj-bc:amd64                       4.7.2-1                            amd64        Link time only library for use with gcj
 ii  libgcj-common                         1:4.6.3-8                          all          Java runtime library (common files)
 ii  libgcj13                              4.7.2-3                            amd64        Java runtime library for use with gcj
 ii  libgcj13-awt                          4.7.2-3                            amd64        AWT peer runtime libraries for use with gcj
@@ -688,8 +688,6 @@ ii  libiw30:amd64                         30~pre9-8                          amd
 ii  libjack-jackd2-0:amd64                1.9.8~dfsg.4+20120529git007cdc37-5 amd64        JACK Audio Connection Kit (libraries)
 ii  libjargs-java                         1.0.0-3                            all          Command-line argument parsing for Java
 ii  libjasper1:amd64                      1.900.1-13+deb7u6                  amd64        JasPer JPEG-2000 runtime library
-ii  libjava3d-java                        1.5.2+dfsg-8                       all          Java 3D API (java library)
-ii  libjava3d-jni                         1.5.2+dfsg-8                       amd64        Java3D API (java jni library)
 ii  libjavascriptcoregtk-1.0-0            1.8.1-3.4                          amd64        Javascript engine library for GTK+
 rc  libjavascriptcoregtk-3.0-0            1.8.1-3.4                          amd64        Javascript engine library for GTK+
 ii  libjaxp1.3-java                       1.3.05-2                           all          Java XML parser and transformer APIs (DOM, SAX, JAXP, TrAX)
@@ -759,6 +757,7 @@ ii  libkonq-common                        4:4.8.4-2                          amd
 ii  libkonq5-templates                    4:4.8.4-2                          all          data files for the Konqueror libraries
 ii  libkonq5abi1                          4:4.8.4-2                          amd64        core libraries for Konqueror
 ii  libkonqsidebarplugin4a                4:4.8.4-2                          amd64        konqueror sidebar plugin library
+ii  libkopete4                            4:4.8.4-1+b1                       amd64        main Kopete library
 ii  libkparts4                            4:4.8.4-4+deb7u3                   amd64        Framework for the KDE Platform Graphical Components
 ii  libkpimidentities4                    4:4.8.4-2+deb7u1                   amd64        library for managing user identities
 ii  libkpimtextedit4                      4:4.8.4-2+deb7u1                   amd64        library that provides a textedit with PIM-specific features
@@ -815,6 +814,7 @@ ii  libmailtransport4                     4:4.8.4-2+deb7u1                   amd
 ii  libmatroska5:amd64                    1.3.0-2+deb7u1                     amd64        extensible open standard audio/video container format (shared library)
 ii  libmcrypt4                            2.5.8-3.1                          amd64        De-/Encryption Library
 ii  libmeanwhile1                         1.0.2-4                            amd64        open implementation of the Lotus Sametime Community Client protocol
+ii  libmediastreamer1:amd64               3.5.2-10                           amd64        linphone web phone's media library
 ii  libmemcached10:amd64                  1.0.8-1                            amd64        C and C++ client library to the memcached server
 ii  libmhash2                             0.9.9.9-1.1                        amd64        Library for cryptographic hashing and message authentication
 ii  libmicroblog4                         4:4.8.4-2+deb7u1                   amd64        library for using the Microblog Akonadi Resource
@@ -829,6 +829,7 @@ ii  libmpc2:amd64                         0.9-4                              amd
 ii  libmpcdec6:amd64                      2:0.1~r459-4                       amd64        MusePack decoder - library
 ii  libmpeg2-4                            0.4.1-3                            amd64        MPEG1 and MPEG2 video decoder library
 ii  libmpfr4:amd64                        3.1.0-5                            amd64        multiple precision floating-point computation
+ii  libmsn0.3                             4.2-2                              amd64        high-level C++ library for MSN Messenger [runtime]
 ii  libmtdev1:amd64                       1.1.2-1                            amd64        Multitouch Protocol Translation Library - shared library
 ii  libmtp-common                         1.1.3-35-g0ece104-5+deb7u1         all          Media Transfer Protocol (MTP) common files
 ii  libmtp-runtime                        1.1.3-35-g0ece104-5+deb7u1         amd64        Media Transfer Protocol (MTP) runtime tools
@@ -883,8 +884,10 @@ ii  libopenraw1:amd64                     0.0.9-3+b1                         amd
 ii  libopus0                              0.9.14+20120615-1+nmu1+deb7u1      amd64        Opus codec runtime library
 rc  liborbit2                             1:2.14.19-0.1                      amd64        libraries for ORBit2 - a CORBA ORB
 ii  liborc-0.4-0:amd64                    1:0.4.16-2                         amd64        Library of Optimized Inner Loops Runtime Compiler
+ii  libortp8:amd64                        3.5.2-10                           amd64        Real-time Transport Protocol stack
 ii  libossp-uuid16                        1.6.2-1.3                          amd64        OSSP uuid ISO-C and C++ - shared library
 ii  libotf0                               0.9.12-2                           amd64        Library for handling OpenType Font - runtime
+ii  libotr2                               3.2.1-1+deb7u2                     amd64        Off-the-Record Messaging library
 ii  libp11-kit0:amd64                     0.12-3                             amd64        Library for loading and coordinating access to PKCS#11 modules - runtime
 ii  libpam-cap:amd64                      1:2.22-1.2                         amd64        PAM module for implementing capabilities
 ii  libpam-ck-connector:amd64             0.4.5-3.1                          amd64        ConsoleKit PAM module
@@ -944,6 +947,7 @@ ii  libpython2.7                          2.7.3-6+deb7u4                     amd
 ii  libqalculate5:amd64                   0.9.7-8                            amd64        Powerful and easy to use desktop calculator - library
 ii  libqalculate5-data                    0.9.7-8                            all          Powerful and easy to use desktop calculator - data
 ii  libqca2:amd64                         2.0.3-4                            amd64        libraries for the Qt Cryptographic Architecture
+ii  libqca2-plugin-ossl:amd64             2.0.0~beta3-2                      amd64        SSL/TLS support for the Qt Cryptographic Architecture
 ii  libqdbm14                             1.8.78-2                           amd64        QDBM Database Libraries without GDBM wrapper[runtime]
 ii  libqgpgme1                            4:4.8.4-2+deb7u1                   amd64        library for GpgME++ integration with Qt
 ii  libqhull5                             2009.1-3                           amd64        calculate convex hulls and related structures (shared library)
@@ -1083,6 +1087,7 @@ rc  libspeechd2                           0.7.1-6.2                          amd
 ii  libspeex1:amd64                       1.2~rc1-7                          amd64        The Speex codec runtime library
 ii  libspeexdsp1:amd64                    1.2~rc1-7                          amd64        The Speex extended runtime library
 ii  libsqlite3-0:amd64                    3.7.13-1+deb7u4                    amd64        SQLite 3 shared library
+ii  libsrtp0                              1.4.4+20100615~dfsg-2+deb7u2       amd64        Secure RTP (SRTP) and UST Reference Implementations - shared library
 ii  libss2:amd64                          1.42.5-1.1+deb7u1                  amd64        command-line interface parsing library
 ii  libssh-4:amd64                        0.5.4-1+deb7u3                     amd64        tiny C SSH library
 ii  libssh2-1:amd64                       1.4.2-1.1+deb7u2                   amd64        SSH2 client-side library
@@ -1145,7 +1150,6 @@ ii  libv4lconvert0:amd64                  0.8.8-3                            amd
 ii  libva-x11-1:amd64                     1.0.15-4                           amd64        Video Acceleration (VA) API for Linux -- X11 runtime
 ii  libva1:amd64                          1.0.15-4                           amd64        Video Acceleration (VA) API for Linux -- runtime
 ii  libvcdinfo0                           0.7.24+dfsg-0.1                    amd64        library to extract information from VideoCD
-ii  libvecmath-java                       1.5.2-3                            all          javax.vecmath vector math package
 ii  libvirtodbc0                          6.1.4+dfsg1-7                      amd64        high-performance database - ODBC libraries
 ii  libvisio-0.0-0                        0.0.17-1                           amd64        library for parsing the visio file structure
 ii  libvisual-0.4-0:amd64                 0.4.0-5                            amd64        Audio visualization framework
