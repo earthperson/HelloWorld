@@ -8,7 +8,10 @@ ii  acpi                                  1.6-1                              amd
 ii  acpi-support-base                     0.140-5+deb7u3                     all          scripts for handling base ACPI events such as the power button
 ii  acpid                                 1:2.0.16-1+deb7u1                  amd64        Advanced Configuration and Power Interface event daemon
 ii  adduser                               3.113+nmu3                         all          add and remove users and groups
+ii  akonadi-backend-mysql                 1.7.2-3+deb7u1                     all          MySQL storage backend for Akonadi
+ii  akonadi-backend-postgresql            1.7.2-3+deb7u1                     all          PostgreSQL storage backend for Akonadi
 ii  akonadi-backend-sqlite                1.7.2-3+deb7u1                     amd64        SQLite storage backend for Akonadi
+ii  akonadi-dbg                           1.7.2-3+deb7u1                     amd64        debugging symbols for the Akonadi PIM storage service
 ii  akonadi-server                        1.7.2-3+deb7u1                     amd64        Akonadi PIM storage service
 ii  amarok                                2.6~beta1+75.g47e75df-1            amd64        easy to use media player based on the KDE Platform
 ii  amarok-common                         2.6~beta1+75.g47e75df-1            all          architecture independent files for Amarok
@@ -228,7 +231,6 @@ ii  hplip-data                            3.12.6-3.1+deb7u2                  all
 ii  hunspell-en-us                        20070829-6+deb7u1                  all          English_american dictionary for hunspell
 ii  iamerican                             3.3.02-6                           all          American English dictionary for ispell (standard version)
 ii  ibritish                              3.3.02-6                           all          British English dictionary for ispell (standard version)
-ii  icedove                               1:52.8.0-1~deb7u1                  all          mail/news client with RSS and integrated spam filter support
 ii  idn                                   1.25-2+deb7u3                      amd64        Command line and Emacs interface to GNU Libidn
 ii  ienglish-common                       3.3.02-6                           all          Common files for British and American ispell dictionaries
 ii  ifupdown                              0.7.8                              amd64        high level tools to configure network interfaces
@@ -322,6 +324,7 @@ ii  klickety                              4:4.8.4-3                          amd
 ii  klines                                4:4.8.4-3                          amd64        color lines game
 ii  klipper                               4:4.8.4-6                          amd64        clipboard manager
 ii  kmahjongg                             4:4.8.4-3                          amd64        mahjongg solitaire game
+ii  kmail                                 4:4.4.11.1+l10n-3+b1               amd64        full featured graphical email client
 ii  kmenuedit                             4:4.8.4-6                          amd64        XDG menu editor
 ii  kmines                                4:4.8.4-3                          amd64        minesweeper game
 ii  kmix                                  4:4.8.4-2                          amd64        volume control and mixer
@@ -757,8 +760,10 @@ ii  libkonq-common                        4:4.8.4-2                          amd
 ii  libkonq5-templates                    4:4.8.4-2                          all          data files for the Konqueror libraries
 ii  libkonq5abi1                          4:4.8.4-2                          amd64        core libraries for Konqueror
 ii  libkonqsidebarplugin4a                4:4.8.4-2                          amd64        konqueror sidebar plugin library
+ii  libkontactinterface4                  4:4.8.4-2+deb7u1                   amd64        Kontact interface library
 ii  libkopete4                            4:4.8.4-1+b1                       amd64        main Kopete library
 ii  libkparts4                            4:4.8.4-4+deb7u3                   amd64        Framework for the KDE Platform Graphical Components
+ii  libkpgp4                              4:4.4.11.1+l10n-3+b1               amd64        gpg based crypto library
 ii  libkpimidentities4                    4:4.8.4-2+deb7u1                   amd64        library for managing user identities
 ii  libkpimtextedit4                      4:4.8.4-2+deb7u1                   amd64        library that provides a textedit with PIM-specific features
 ii  libkpimutils4                         4:4.8.4-2+deb7u1                   amd64        library for dealing with email addresses
@@ -771,8 +776,10 @@ ii  libkrosscore4                         4:4.8.4-4+deb7u3                   amd
 ii  libksba8:amd64                        1.2.0-2+deb7u2                     amd64        X.509 and CMS support library
 ii  libkscreensaver5                      4:4.8.4-6                          amd64        library of the KDE Screensaver system
 ii  libksgrd4                             4:4.8.4-6                          amd64        library for ksysguard
+ii  libksieve4                            4:4.4.11.1+l10n-3+b1               amd64        mail/news message filtering library
 ii  libksignalplotter4                    4:4.8.4-6                          amd64        KSignalPlotter widget
 ii  libktexteditor4                       4:4.8.4-4+deb7u3                   amd64        KTextEditor interfaces for the KDE Platform
+ii  libktnef4                             4:4.8.4-2+deb7u1                   amd64        library for handling TNEF data
 ii  libkunitconversion4                   4:4.8.4-4+deb7u3                   amd64        Unit Conversion library for the KDE Platform
 ii  libkutils4                            4:4.8.4-4+deb7u3                   amd64        dummy transitional library
 ii  libkwineffects1abi3                   4:4.8.4-6                          amd64        library used by effects for the KDE window manager
@@ -816,8 +823,11 @@ ii  libmcrypt4                            2.5.8-3.1                          amd
 ii  libmeanwhile1                         1.0.2-4                            amd64        open implementation of the Lotus Sametime Community Client protocol
 ii  libmediastreamer1:amd64               3.5.2-10                           amd64        linphone web phone's media library
 ii  libmemcached10:amd64                  1.0.8-1                            amd64        C and C++ client library to the memcached server
+ii  libmessagecore4                       4:4.4.11.1+l10n-3+b1               amd64        message core library
+ii  libmessagelist4                       4:4.4.11.1+l10n-3+b1               amd64        message list library
 ii  libmhash2                             0.9.9.9-1.1                        amd64        Library for cryptographic hashing and message authentication
 ii  libmicroblog4                         4:4.8.4-2+deb7u1                   amd64        library for using the Microblog Akonadi Resource
+ii  libmimelib4                           4:4.4.11.1+l10n-3+b1               amd64        MIME library
 ii  libmimic0                             1.0.4-2.1                          amd64        A video codec for Mimic V2.x content
 ii  libmms0:amd64                         0.6.2-3+deb7u1                     amd64        MMS stream protocol library - shared library
 ii  libmng1:amd64                         1.0.10-3                           amd64        Multiple-image Network Graphics library
@@ -964,6 +974,8 @@ ii  libqt4-qt3support:amd64               4:4.8.2+dfsg-11                    amd
 ii  libqt4-script:amd64                   4:4.8.2+dfsg-11                    amd64        Qt 4 script module
 ii  libqt4-scripttools:amd64              4:4.8.2+dfsg-11                    amd64        Qt 4 script tools module
 ii  libqt4-sql:amd64                      4:4.8.2+dfsg-11                    amd64        Qt 4 SQL module
+ii  libqt4-sql-mysql:amd64                4:4.8.2+dfsg-11                    amd64        Qt 4 MySQL database driver
+ii  libqt4-sql-psql:amd64                 4:4.8.2+dfsg-11                    amd64        Qt 4 PostgreSQL database driver
 ii  libqt4-sql-sqlite:amd64               4:4.8.2+dfsg-11                    amd64        Qt 4 SQLite 3 database driver
 ii  libqt4-svg:amd64                      4:4.8.2+dfsg-11                    amd64        Qt 4 SVG module
 ii  libqt4-test:amd64                     4:4.8.2+dfsg-11                    amd64        Qt 4 test module
@@ -1255,7 +1267,6 @@ ii  libzephyr4                            3.0.2-2                            amd
 ii  libzip2                               0.10.1-1.1                         amd64        library for reading, creating, and modifying zip archives (runtime)
 ii  libzvbi-common                        0.2.33-6                           all          Vertical Blanking Interval decoder (VBI) - common files
 ii  libzvbi0:amd64                        0.2.33-6                           amd64        Vertical Blanking Interval decoder (VBI) - runtime files
-ii  lightning                             1:52.8.0-1~deb7u1                  amd64        Calendar Extension for Thunderbird
 ii  linux-base                            3.5                                all          Linux image base package
 ii  linux-headers-3.2.0-4-amd64           3.2.96-2                           amd64        Header files for Linux 3.2.0-4-amd64
 ii  linux-headers-3.2.0-4-common          3.2.96-2                           amd64        Common header files for Linux 3.2.0-4
@@ -1532,7 +1543,6 @@ ii  tcpd                                  7.6.q-24                           amd
 ii  tcpdump                               4.9.2-1~deb7u1                     amd64        command-line network traffic analyzer
 ii  telnet                                0.17-36                            amd64        The telnet client
 ii  texinfo                               4.13a.dfsg.1-10                    amd64        Documentation system for on-line information and printed output
-ii  thunderbird                           1:52.8.0-1~deb7u1                  amd64        mail/news client with RSS, chat and integrated spam filter support
 ii  time                                  1.7-24                             amd64        GNU time program for measuring CPU resource usage
 ii  tk8.5                                 8.5.11-2                           amd64        Tk toolkit for Tcl and X11, v8.5 - run-time files
 ii  traceroute                            1:2.0.18-3                         amd64        Traces the route taken by packets over an IPv4/IPv6 network
