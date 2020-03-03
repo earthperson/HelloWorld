@@ -186,7 +186,9 @@ ii  gimp                                  2.8.2-2+deb7u3                     amd
 ii  gimp-data                             2.8.2-2+deb7u3                     all          Data files for GIMP
 ii  gir1.2-glib-2.0                       1.32.1-1                           amd64        Introspection data for GLib, GObject, Gio and GModule
 ii  git                                   1:1.7.10.4-1+wheezy6               amd64        fast, scalable, distributed revision control system
+ii  git-gui                               1:1.7.10.4-1+wheezy6               all          fast, scalable, distributed revision control system (GUI)
 ii  git-man                               1:1.7.10.4-1+wheezy6               all          fast, scalable, distributed revision control system (manual pages)
+ii  gitk                                  1:1.7.10.4-1+wheezy6               all          fast, scalable, distributed revision control system (revision tree visualizer)
 ii  glib-networking:amd64                 2.32.3-1                           amd64        network-related giomodules for GLib
 ii  glib-networking-common                2.32.3-1                           all          network-related giomodules for GLib - data files
 ii  glib-networking-services              2.32.3-1                           amd64        network-related giomodules for GLib - D-Bus services
@@ -1538,12 +1540,14 @@ ii  task-print-server                     3.14.1                             all
 ii  task-ssh-server                       3.14.1                             all          SSH server
 ii  tasksel                               3.14.1                             all          Tool for selecting tasks for installation on Debian systems
 ii  tasksel-data                          3.14.1                             all          Official tasks used for installation of Debian systems
+ii  tcl                                   8.5.0-2.1                          all          The Tool Command Language (default version) - run-time files
 ii  tcl8.5                                8.5.11-2                           amd64        Tcl (the Tool Command Language) v8.5 - run-time files
 ii  tcpd                                  7.6.q-24                           amd64        Wietse Venema's TCP wrapper utilities
 ii  tcpdump                               4.9.2-1~deb7u1                     amd64        command-line network traffic analyzer
 ii  telnet                                0.17-36                            amd64        The telnet client
 ii  texinfo                               4.13a.dfsg.1-10                    amd64        Documentation system for on-line information and printed output
 ii  time                                  1.7-24                             amd64        GNU time program for measuring CPU resource usage
+ii  tk                                    8.5.0-2.1                          all          The Tk toolkit for Tcl and X11 (default version) - run-time files
 ii  tk8.5                                 8.5.11-2                           amd64        Tk toolkit for Tcl and X11, v8.5 - run-time files
 ii  traceroute                            1:2.0.18-3                         amd64        Traces the route taken by packets over an IPv4/IPv6 network
 ii  tsconf                                1.0-11                             all          touch screen library common files
