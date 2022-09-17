@@ -8,4 +8,3 @@
 * Теория и практика языков программирования: Учебник для вузов. Стандарт 3-го поколения. Сергей Александрович Орлов. 2014 ISBN 978-5-496-00032-1
 * The Unified Modeling Language User Guide. Grady Booch, James Rumbaugh, and Ivar Jacobson, 2nd Edition
 * Web Application Development with Yii and PHP. Jeffrey Winesett. Second Edition 2012 ISBN 978-1-84951-872-7
-
